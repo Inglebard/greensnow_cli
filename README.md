@@ -24,7 +24,8 @@ optional arguments:
 
 ##### Command :
 ```
-python greensnow_cli.py -i examples/file1.txt --regex_match "^.* Ban.*$"```
+python greensnow_cli.py -i examples/file1.txt --regex_match "^.* Ban.*$"
+```
 
 Output :
 ```
