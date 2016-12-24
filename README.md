@@ -27,7 +27,7 @@ optional arguments:
 python greensnow_cli.py -i examples/file1.txt --regex_match "^.* Ban.*$"
 ```
 
-Output :
+##### Output :
 ```
 |        IP       |   State   | Country |
 |  182.131.125.7  |  WARNING  |    CN   |
@@ -43,7 +43,7 @@ Output :
 python greensnow_cli.py -i examples/file2.txt
 ```
 
-Output :
+##### Output :
 ```
 |        IP       |   State   | Country |
 | 210.180.221.136 |  WARNING  |    KR   |
@@ -61,7 +61,8 @@ Output :
 ```
 python greensnow_cli.py --raw_data "182.131.125.7,110.38.217.161,182.71.120.158"
 ```
-Output :
+
+##### Output :
 ```
 |        IP       |   State   | Country |
 |  182.131.125.7  |  WARNING  |    CN   |
