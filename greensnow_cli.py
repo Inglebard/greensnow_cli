@@ -34,9 +34,9 @@ class GreensnowConsole() :
             blocked = "N/A"
             country = "N/A"
 
-            if data.blocked == 0 and data.nb_attack <= 0 :
+            if int(data.blocked) == 0 and int(data.nb_attack) <= 0 :
                 blocked = "OK"
-            elif data.blocked == 0 and data.nb_attack >= 0 :
+            elif int(data.blocked) == 0 and int(data.nb_attack) >= 0 :
                 blocked = "WARNING"
             else :
                 blocked = "BLOCKED"
