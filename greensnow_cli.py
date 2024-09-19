@@ -34,6 +34,9 @@ class GreensnowConsole() :
             blocked = "N/A"
             country = "N/A"
 
+            data.blocked = int(data.blocked)
+            data.nb_attack = int(data.nb_attack)
+
             if int(data.blocked) == 0 and int(data.nb_attack) <= 0 :
                 blocked = "OK"
             elif int(data.blocked) == 0 and int(data.nb_attack) >= 0 :
@@ -76,7 +79,7 @@ class GreensnowController() :
 
     def __init__(self):
         self.conn = http.client.HTTPConnection("api.greensnow.co")
-        self.ip_regex ="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
+        self.ip_regex = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
 
     def check_ip(self,ip):
         self.conn.request("GET", "/"+ip.strip())
